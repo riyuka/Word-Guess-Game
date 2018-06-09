@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word-guess-game: Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>  
+    <div class="container">
+        <div class="section1">
+            <h1>Hangman -- Fruitman</h1>
+            <p>Welcome to the fruitman, the word you will guess is from the fruit catagory, enjoy~!</p>
+            <h2>Word to be guessed:</h2>
+            <div id="displayWord"></div>
+            <h2 id="newGame"></h2>
+            <div id="start">PRESS ANY KEY TO START</div>
+        </div>
+
+        <div class="section2">
+            <h3>Guesses remaining:</h3>
+            <div id="remaining"></div>
+            <div id="scores">
+                <div id="w">
+                <h2 id="scoreWin">Wins:</h2>
+                <div id="wins"></div>
+                </div>
+                <div id="l">
+                <h2 id="scoreLost">Losts:</h2>
+                <div id="losts"></div>
+                </div>
+            </div>
+            <audio id="success" src="assets/sound/successful.mp3"></audio>
+            <audio id="failed" src="assets/sound/failed.mp3"></audio>
+        </div>
+
+        <div class="section3">
+            <h2>Letter already guessed:</h2>
+            <div id="guessedLetter"></div>
+        </div>
+    </div>
+</body>
+</html>
